@@ -1,41 +1,125 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  height:100%;
+  width:100%; 
+}
+
 .card {
-  width: 280px;
-  background-color: #fff;
+  width: 300px;
+  background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-.card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
+.top {
+  position: relative;
+  height: 180px;
+  background: #f3f3f3;
 }
 
-.card h2 {
-  font-size: 1.2rem;
+.top .bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.top .amazon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.4rem;
+  color: #FF9900;
+}
+
+
+.middle {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.middle h3 {
+  margin: 5px 0;
   color: #333;
-  margin-bottom: 5px;
 }
 
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.4;
-}
-
-.card span {
-  display: block;
-  font-weight: 600;
+.middle p {
   color: #777;
+  font-size: 14px;
   margin-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn h3 {
+  font-size: 13px;
+  background: #e3e3e3;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn h3:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.bottom {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom h3 {
+  color: #007bff;
+  font-size: 18px;
+}
+
+.bottom button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bottom button:hover {
+  background: #0056b3;
+}
+.bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.4rem;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bookmark:hover {
+  color: #ff9900; /* Amazon orange vibe */
+}
+
+p svg {
+  color: #ff9900;
+  margin-right: 6px;
 }
