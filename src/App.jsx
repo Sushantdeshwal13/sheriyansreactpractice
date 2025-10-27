@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Card from './components/Card'
 import User from './components/User'
+import Section1 from './components/section1/section1'; 
+import Section2 from './components/section2/section2';
 function App() {
 
   const jobOpenings = [
@@ -108,15 +110,12 @@ function App() {
   
   return (
     <>
-     {jobOpenings.map((elem,idx)=>{
-      return (
-        <div key={idx}>
-        <Card company={elem.companyName}/>
-      </div>
-      )
-     })}
+     <Section1/>
+     <Section2/>
+
     </>
   )
 }
+
 
 export default App
