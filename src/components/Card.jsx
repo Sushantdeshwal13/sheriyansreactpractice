@@ -5,20 +5,20 @@ const Card = (props) => {
     <>
      <div className="card">
         <div className="top">
-             <i className="amazon"><FaAmazon /></i>
+             <i className="amazon"><FaAmazon />{props.brandlogo}</i>
              <i className="bookmark"><FaBookmark /></i>
         </div>
         <div className="middle">
-            <h3>senior fd</h3>
-            <p>company name</p>
+            <h3>{props.post}</h3>
+            <p>{props.companyname}</p>
             <div className="btn">
-                <h3>part time</h3>
-                <h3>full time</h3>
+                <h3>{props.tag1}</h3>
+                <h3>{props.tag2}</h3>
             </div>
         </div>
         <div className="bottom">
-            <h3>price</h3>
-            <button>Apply now</button>
+            <h3>{props.price}</h3>
+            <button>{props.apply}</button>
         </div>
      </div>
     </>
