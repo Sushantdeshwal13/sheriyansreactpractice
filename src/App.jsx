@@ -108,13 +108,13 @@ function App() {
   
   return (
     <>
-{jobOpenings.map((elem,idx)=>{
-   return <div key={idx}>
-    <Card company={elem.companyName} post={elem.post} tag1={elem.tag1} tag2={elem.tag2}
-     price={elem.pay} apply={elem.location}/>
-   </div>
-})}
-     
+     {jobOpenings.map((elem,idx)=>{
+      return (
+        <div key={idx}>
+        <Card company={elem.companyName}/>
+      </div>
+      )
+     })}
     </>
   )
 }
